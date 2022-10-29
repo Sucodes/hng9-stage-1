@@ -1,1 +1,24 @@
 @import '../../styles/variable.scss';
+
+.icons {
+    width: inherit;
+    height: 72px;
+    @include flexCenter(row);
+    margin-bottom: 32px;
+
+    div {
+        width: 20%;
+        @include flexCenter(row);
+        justify-content: space-between;
+    }
+}
+
+/************ media queries *********************/
+
+@media  (min-width: $md) {
+    .icons {    
+        div {
+            width: 10%;
+        }
+    }
+}
