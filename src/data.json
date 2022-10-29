@@ -1,22 +1,49 @@
 [
     {
+        "key": "1",
+        "id": "twitter__link",
+        "href": "https://twitter.com/su_codes",
+        "text": "Connect with me",
+        "title": "Hey there! Let's be friends."
+    },
+
+    {   
+        "key": "2",
         "id": "btn__zuri",
-        "href": "https://training.zuri.team/"
+        "href": "https://training.zuri.team/",
+        "text": "Zuri Team",
+        "title": "New to Zuri? Click to join us!"
     },
+
     {
+        "key": "3",
         "id": "books",
-        "href": "http://books.zuri.team"
+        "href": "http://books.zuri.team",
+        "text": "Zuri Books",
+        "title": "Find the latest books on design and coding."
     },
+
     {
+        "key": "4",
         "id": "books__python",
-        "href": "https://books.zuri.team/python-for-beginners?ref_id=suvwemoney"
+        "href": "https://books.zuri.team/python-for-beginners?ref_id=suvwemoney",
+        "text": "Python Books",
+        "title": "Want to learn Python? Grab a copy of the best recommended book!"
     },
+
     {
+        "key": "5",
         "id": "pitch",
-        "href": "https://background.zuri.team"
+        "href": "https://background.zuri.team",
+        "text": "Background Check for Coders",
+        "title": ""
     },
+
     {
+        "key": "6",
         "id": "book__design",
-        "href": "https://books.zuri.team/design-rules"
+        "href": "https://books.zuri.team/design-rules",
+        "text": "Design Books",
+        "title": ""
     }
 ]

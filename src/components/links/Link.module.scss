@@ -1,0 +1,53 @@
+@import '../../styles/variable.scss';
+
+.linkBtn {
+    @include flexCenter(column);
+    justify-content: space-between;
+    height: inherit;
+    width: 100%;
+
+    div {
+        position: relative;
+        cursor: pointer;
+        background-color: $btnColor;
+        width: inherit;
+        @include flexCenter(row);
+        padding: 24px 32px;
+        border-radius: 8px;
+        height: 68px;
+
+        a {
+            @include flexCenter(row);
+            height: inherit;
+            width: 100%;
+            color: $textColor;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            text-decoration: none;
+        }
+
+        .linkBtn_subtext {
+            display: none;
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            border: 1px solid $textColor;
+            background-color: $textColor;
+            width: 250px;
+            height: 50px;
+            color: $backgroundColor;
+            border-radius: 10px 10px 0px 10px;
+            padding: 10px;
+            z-index: 2;
+            font-size: 12px;
+        }
+
+        &:hover {
+            .linkBtn_subtext {
+                // display: block;
+                @include flexCenter(row);
+            }
+        }
+    }
+}
