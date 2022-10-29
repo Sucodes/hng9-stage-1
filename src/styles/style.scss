@@ -12,3 +12,11 @@
     font-family: 'Inter', sans-serif;
     padding: 0px 16px;
 }
+
+/***************** media queries ************************/
+
+@media (min-width: $md) {
+    .container {
+        padding: 0px 24px;
+    }
+}

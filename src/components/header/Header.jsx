@@ -12,21 +12,20 @@ const Header = () => {
           <img src={image} alt="Profile" id="profile__img" />
         </div>
         <div className={styles.profile_links}>
-          <p>
-            Twitter: 
+          <h2>
             <a
               href="https://twitter.com/su_codes"
               id="twitter"
               target="_blank"
               rel="noreferrer"
             >
-                @su_codes
+              Su_codes
             </a>
-          </p>
+          </h2>
 
           <span>
             <a href="https://hng9.slack.com/ssb/redirect" id="slack">
-              Suvwe Money
+              suvwemoney
             </a>
           </span>
         </div>

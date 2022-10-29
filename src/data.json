@@ -25,7 +25,7 @@
 
     {
         "key": "4",
-        "id": "books__python",
+        "id": "book__python",
         "href": "https://books.zuri.team/python-for-beginners?ref_id=suvwemoney",
         "text": "Python Books",
         "title": "Want to learn Python? Grab a copy of the best recommended book!"
@@ -36,7 +36,7 @@
         "id": "pitch",
         "href": "https://background.zuri.team",
         "text": "Background Check for Coders",
-        "title": ""
+        "title": "Begin your journey to tech with the most secure platform there is."
     },
 
     {
@@ -44,6 +44,6 @@
         "id": "book__design",
         "href": "https://books.zuri.team/design-rules",
         "text": "Design Books",
-        "title": ""
+        "title": "Take a look at our FREE design book to get you started on UI/UX."
     }
 ]

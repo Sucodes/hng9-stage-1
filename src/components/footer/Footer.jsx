@@ -1,10 +1,23 @@
 import React from 'react';
+import Icons from '../icons/Icons';
+import I4G from '../../styles/assets/I4G.png'
 import styles from '../footer/Footer.module.scss';
 
 const Footer = () => {
   return (
     <section className={styles.footer}>
-      <div>hey</div>
+      <Icons />
+      <hr />
+      <div className={styles.footer_logo}>
+        <h2>Zuri
+          <span></span>
+          Internship
+        </h2>
+
+        <p>HNG Internship 9 Frontend Task</p>
+
+        <img src={I4G} alt="Ingressive For Good logo" />
+      </div>
     </section>
   )
 }

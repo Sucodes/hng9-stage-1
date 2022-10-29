@@ -1,14 +1,14 @@
 import React from "react";
 import Header from './components/header/Header';
 import Button from './components/button/Button';
-import Icons from "./components/icons/Icons";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
     <main className="container">
       <Header />
       <Button />
-      <Icons />
+      <Footer />
     </main>
   );
 }
