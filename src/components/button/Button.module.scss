@@ -1,0 +1,10 @@
+@import '../../styles/variable.scss';
+
+.buttons {
+    width: 100%;
+    height: 528px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    @include flexCenter(column);
+    justify-content: space-between;
+}

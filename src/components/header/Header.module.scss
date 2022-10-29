@@ -1,0 +1,80 @@
+@import '../../styles/variable.scss';
+
+.header {
+    margin-top: 44px;
+    width: 100%;
+
+    .profile {
+        @include flexCenter(column);
+        justify-content: space-between;
+        height: 140px;
+
+        .img_div {
+
+            img {
+                object-fit: contain;
+                border-radius: 50%;
+                width: 88px;
+            }
+        }
+
+        &_links {
+            p {
+                display: block;
+                color: $textColor;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 28px;
+
+                a {
+                    text-decoration: none;
+                    color: $textColor;
+                }
+            }
+
+            span {
+                display: none;
+            }
+        }
+    }
+
+    .menu_icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px dashed $iconColor;
+        @include flexCenter(row);
+        position: absolute;
+        z-index: 2;
+        right: 16px;
+        top: 20px;
+
+        &1 {
+            display: block;
+        }
+
+        &2 {
+            display: none;
+        }
+    }
+
+}
+
+/******************* media queries *****************************/
+
+@media (min-width: $md) {
+    .header {
+
+        .menu_icon {
+            right: 208px;
+
+            &1 {
+                display: none;
+            }
+
+            &2 {
+                display: block;
+            }
+        }
+    }
+}
