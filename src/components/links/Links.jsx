@@ -1,8 +1,9 @@
 import React from "react";
-import styles from "../links/Link.module.scss";
+import { Link } from 'react-router-dom';
+import styles from "../links/Links.module.scss";
 import data from "../../data.json";
 
-const Link = () => {
+const Links = () => {
   return (
     <div className={styles.linkBtn}>
       {data &&
@@ -20,8 +21,12 @@ const Link = () => {
             </div>
           );
         })}
+      <div id="contact">
+        <Link to='/contact'>Contact Me</Link>
+        <div className={styles.linkBtn_subtext}>Send a message.</div>
+      </div>
     </div>
   );
 };
 
-export default Link;
+export default Links;

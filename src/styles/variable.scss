@@ -10,6 +10,8 @@ $iconColor: #98A2B3;
 $textColor:  #101828;
 $red: #E7332B;
 $horizontalColor: #667085;
+$greyColor: #475467;
+$borderColor: #D0D5DD;
 
 
 /********** media breakpoints ****************/
@@ -24,4 +26,14 @@ $md: 768px;
     flex-direction: $direction;
     justify-content: center;
     align-items: center;
+}
+
+@mixin placeholder {
+    &::placeholder {
+        color: $horizontalColor;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
 }

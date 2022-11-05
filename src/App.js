@@ -1,15 +1,19 @@
 import React from "react";
-import Header from './components/header/Header';
-import Button from './components/button/Button';
-import Footer from "./components/footer/Footer";
+import { Route, Routes } from "react-router-dom";
+import Layout from "./components/layout/Layout";
+import Home from "./components/home/Home";
+import Contact from "./components/contact/Contact";
 
 function App() {
   return (
-    <main className="container">
-      <Header />
-      <Button />
-      <Footer />
-    </main>
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+        </Route>
+      </Routes>
+    </>
   );
 }
 

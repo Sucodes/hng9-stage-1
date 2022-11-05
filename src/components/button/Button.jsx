@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from '../button/Button.module.scss';
-import Link from '../links/Link';
+import Links from '../links/Links';
 
 const Button = () => {
   return (
     <section className={styles.buttons}>
-      <Link/>
+      <Links/>
     </section>
   )
 }
 
-export default Button
+export default Button;
