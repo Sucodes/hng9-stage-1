@@ -2,6 +2,12 @@ import React from "react";
 import styles from "../contact/Contact.module.scss";
 
 const Contact = () => {
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert("Success!")
+  }
+
   return (
     <section className={styles.contact}>
       <div className={styles.contact_heading}>
@@ -10,7 +16,7 @@ const Contact = () => {
       </div>
 
       <div className={styles.contact_form}>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className={styles.name}>
             <div className={styles.name_first}>
               <label htmlFor="First name">First name</label>
@@ -64,7 +70,7 @@ const Contact = () => {
             </label>
           </div>
 
-          <button id="btn_submit">Send message</button>
+          <button id="btn_submit" type="submit">Send message</button>
         </form>
       </div>
     </section>
