@@ -10,7 +10,7 @@ const Contact = () => {
       </div>
 
       <div className={styles.contact_form}>
-        <form action="#">
+        <form>
           <div className={styles.name}>
             <div className={styles.name_first}>
               <label htmlFor="First name">First name</label>
