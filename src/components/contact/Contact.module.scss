@@ -7,16 +7,18 @@
     width: 100%;
     height: 676px;
     margin-top: 32px;
-    margin-bottom: 24px;
+    margin-bottom: 188px;
 
     &_heading {
         width: inherit;
+        margin-top: 64px;
 
         h1 {
             color: $textColor;
             font-size: 36px;
             line-height: 44px;
             letter-spacing: -0.02em;
+            margin-bottom: 16px;
         }
 
         p {
@@ -28,6 +30,7 @@
     }
 
     &_form {
+        margin-top:50px;
         width: inherit;
 
         form {
@@ -37,6 +40,7 @@
             justify-content: space-around;
 
             div {
+                margin-top: 24px;
                 width: inherit;
 
                 label {
@@ -53,15 +57,30 @@
                     padding: 10px 14px;
                     @include border($borderColor);
                     @include placeholder;
+
+                    &:focus {
+                        outline:#B2DDFF solid 2px;
+                    }
                 }
 
                 textarea {
+                    height: 132px;
                     margin-top: 6px;
                     width: inherit;
                     padding: 12px 14px;
                     @include border($borderColor);
                     @include placeholder;
+
+                    &:focus {
+                        outline:#B2DDFF solid 2px;
+                    }
                 }
+            }
+
+            .name {
+                @include flexCenter(column);
+                justify-content: space-between;
+                align-items: flex-start;
             }
 
             .checkbox {
@@ -97,13 +116,14 @@
                 input[type="checkbox"]:checked + label::before {
                     visibility: visible;
                     content: '\002714';
-                    background-color: $blue;
-                    color: $backgroundColor;
+                    color: $blue;
+                    box-shadow: 0px 0px 5px 1px #B2DDFF;
                     @include flexCenter(row);
                 }
             }
 
             button {
+                margin-top: 32px;
                 width: 100%;
                 height: 48px;
                 font-family: 'Inter';
@@ -114,14 +134,19 @@
                 padding: 12px 20px;
                 @include border($blue);
 
+                &:focus {
+                    outline:#B2DDFF solid 4px;
+                }
+
                 &:hover {
                     background-color: #B2DDFF;
+                    border: 2px solid #B2DDFF;
+                    transition: all 3s ease-in-out;
                 }
             }
         }
     }
 }
-
 
 /******************* media queries *************************/
 
@@ -129,28 +154,30 @@
     .contact {
         width: 720px;
         height: 616px;
-        margin: 188px 360px;
+        margin: 150px auto;
 
         &_heading {
             width: inherit;
-
-            h1 {
-                color: $textColor;
-                font-size: 36px;
-                line-height: 44px;
-                letter-spacing: -0.02em;
-            }
-
-            p {
-                color: $greyColor;
-            }
+            margin-top: 0px;
         }
 
         &_form {
+            margin-top:20px;
+
             form {
                 .name {
-                    @include flexCenter(column);
-                    align-items: flex-start;
+                    @include flexCenter(row);
+                    width: 100%;
+                    
+                    div {
+                        @include flexCenter(column);
+                        align-items: flex-start;
+                        width: 100%;
+                    }
+
+                    &_last {
+                        margin-left: 20px;
+                    }
                 }
 
                 .checkbox {

@@ -12,21 +12,27 @@ const Contact = () => {
       <div className={styles.contact_form}>
         <form action="#">
           <div className={styles.name}>
-            <label htmlFor="First name">First name</label>
-            <input
-              type="text"
-              name="First name"
-              id="first_name"
-              placeholder="Enter your first name"
-            />
+            <div className={styles.name_first}>
+              <label htmlFor="First name">First name</label>
+              <input
+                type="text"
+                name="First name"
+                id="first_name"
+                placeholder="Enter your first name"
+                required
+              />
+            </div>
 
-            <label htmlFor="Last name">Last name</label>
-            <input
-              type="text"
-              name="Last name"
-              id="last_name"
-              placeholder="Enter your last name"
-            />
+            <div className={styles.name_last}>
+              <label htmlFor="Last name">Last name</label>
+              <input
+                type="text"
+                name="Last name"
+                id="last_name"
+                placeholder="Enter your last name"
+                required
+              />
+            </div>
           </div>
 
           <div>
@@ -36,6 +42,7 @@ const Contact = () => {
               name="Email"
               id="email"
               placeholder="yourname@email.com"
+              required
             />
           </div>
 
@@ -44,15 +51,13 @@ const Contact = () => {
             <textarea
               name="Message"
               id="message"
-              cols="30"
-              rows="10"
               placeholder="Send me a message and I'll reply you as soon as possible..."
               required
             ></textarea>
           </div>
 
           <div className={styles.checkbox}>
-            <input type="checkbox" name="Checkbox" id="checkbox"/>
+            <input type="checkbox" name="Checkbox" id="checkbox" required/>
             <label htmlFor="Checkbox">
               You agree to providing your data to Suvwe Money who may contact
               you.
