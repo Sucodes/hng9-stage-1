@@ -115,7 +115,9 @@
                 
                 input[type="checkbox"]:checked + label::before {
                     visibility: visible;
-                    content: '\002714';
+                    background-image: url(../../styles/assets/tick.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
                     color: $blue;
                     box-shadow: 0px 0px 5px 1px #B2DDFF;
                     @include flexCenter(row);
