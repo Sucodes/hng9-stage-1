@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section className={styles.contact}>
       <div className={styles.contact_heading}>
-        <h1>Contact me</h1>
+        <h1>Contact Me</h1>
         <p>Hi there, contact me to ask about anything you have in mind.</p>
       </div>
 
