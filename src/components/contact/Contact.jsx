@@ -135,9 +135,7 @@ const Contact = () => {
             </label>
           </div>
 
-          <button id="btn__submit" type="submit">
-            Send message
-          </button>
+          <button id="btn__submit" type="submit">Send message</button>
         </form>
       </div>
     </section>
